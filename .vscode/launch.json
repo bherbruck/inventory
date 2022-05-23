@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Debug current file",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["-r", "ts-node/register", "${file}"],
+      "skipFiles": ["<node_internals>/**"],
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    }
+  ]
+}
